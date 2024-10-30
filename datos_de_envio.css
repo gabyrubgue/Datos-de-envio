@@ -1,0 +1,291 @@
+
+
+/**-----------------------------------------------------------------------------------------------------------------------**/
+/**
+BANNER
+**/
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #fdfdfd;
+  overflow-x: hidden; 
+  
+  
+ 
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient( 45deg, rgb(0, 0, 255),rgb(255, 0, 0));
+  padding: 0px 30px;
+  color: white;
+}
+
+
+/*
+parte de banner  .
+*/
+
+
+.search-bar {
+  flex-grow: 5000;
+  display: flex;
+  align-items: center;
+  margin: 0 40px;
+}
+
+.search-bar input {
+  width: 150%;
+  padding: 20px;
+  border: none;
+  border-radius: 10px 0 0 10px;
+  outline: none;
+}
+
+.search-bar button {
+  background: transparent;
+  border: none;
+  padding: 0px 0px;
+  cursor: pointer;
+}
+
+
+
+.user-menu {
+  display: flex;
+  align-items: center;
+}
+
+.user-menu img {
+  width: 45px;
+  margin-left: 20px;
+  border-radius: 90px;
+  height: 45px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  cursor: pointer;
+  width: 30px;
+  
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #131212;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(56, 58, 70, 0.89);
+  z-index: 1;
+  transition: background 0.3s;
+}
+
+.dropdown-content a {
+  color: rgb(233, 224, 224);
+  padding: 10px 10px;
+  text-decoration: none;
+  display: block;
+  box-shadow: 0px 8px 16px 0px rgba(146, 145, 145, 0.2);
+  z-index: 1;
+  transition: background 0.3s;
+}
+
+.dropdown-content a:hover {
+  background: white;
+  color: #131212;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+/* Agrega este CSS adicional */
+
+/* Estilos para los enlaces de navegación */
+
+
+
+.boton1{
+  position: sticky;
+  background-color: transparent;
+  margin: -1px;
+  margin-left:-1430px;
+  border: 0;
+  top: 56%;
+  transform: translateY(90%);
+  font-size: 15px;
+  color: white;
+  padding: 22px;
+
+}
+
+.boton2{
+  position: sticky;
+  background-color: transparent;
+  margin: -1px;
+  margin-left: -300px;
+  border: 0;
+  top: 56%;
+  transform: translateY(90%);
+  font-size: 15px;
+  color: white;
+  padding: 22px;
+  
+ 
+}
+
+
+
+.boton3{
+  position: sticky;
+  background-color: transparent;
+  margin: -1px;
+  margin-left: -300px;
+  border: 0;
+  top: 56%;
+  transform: translateY(90%);
+  font-size: 15px;
+  color: white;
+  padding: 22px;
+  
+  
+}
+
+
+.logo{
+  border-radius: 30px;
+  margin-left: -10px;
+  transform: translateY(30%);
+  width: 155px;
+  height: 145px;
+}
+
+.buscar{
+  width: 55px;     /*cambio a 55px   */
+  height: 55px;
+  padding-top: 3px;
+  border-radius: 0 10px 10px 0;
+}
+/**
+BANNER
+**/
+
+
+
+
+
+
+
+
+
+.datos-envio {
+    background: rgba(255, 255, 255, 0.9); /* Fondo blanco con transparencia */
+    padding: 30px;
+    border-radius: 10px; /* Esquinas redondeadas */
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra para profundidad */
+}
+
+.datos-envio h1 {
+    margin-top: 0;
+    font-size: 24px; /* Tamaño de fuente más grande */
+    text-align: center; /* Centrar el texto */
+    color: #333; /* Color más oscuro para contraste */
+}
+
+.datos-envio form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold; /* Negrita para etiquetas */
+    color: #555; /* Color de texto más oscuro */
+}
+
+.datos-envio form input,
+.datos-envio form select {
+    width: 95%; /* Ancho completo */
+    padding: 12px; /* Más espacio interior */
+    margin-top: 5px;
+    border: 2px solid  #213cd3; /* Borde azul */
+    border-radius: 10px; /* Esquinas redondeadas */
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.1)); /* Efecto de fondo moderno */
+    transition: border-color 0.3s ease; /* Transición suave para el borde */
+}
+
+.datos-envio form input:focus,
+.datos-envio form select:focus {
+    border-color: #1b1c1d; /* Borde más oscuro al enfocar */
+    outline: none; /* Sin contorno */
+}
+
+.datos-envio .Pago {
+    width: 104%; /* Ancho completo */
+}
+.datos-envio .departamento {
+    width: 104%; /* Ancho completo */
+}
+
+.datos-envio .municipio {
+    width: 104%; /* Ancho completo */
+}
+
+
+.datos-envio ::placeholder {
+    color: rgb(190, 196, 203);
+}
+
+
+
+
+select,
+option {
+    color: rgb(190, 196, 203);
+    background-color: rgb(245, 59, 59);
+}
+
+/* Botones de acción */
+.aceptar {
+    background-color: #213cd3;
+    border: 2px solid #007BFF; /* Fondo azul */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Esquinas redondeadas */
+    padding: 12px 25px; /* Espaciado interno */
+    margin-top: 15px; /* Espacio superior */
+    cursor: pointer; /* Cambiar cursor al pasar el mouse */
+    transition: background 0.3s ease; /* Transición para el efecto hover */
+    margin-left: 290px;
+    
+}
+
+.cancelar {
+    background-color: #fa3909;
+    border: 2px solid #007BFF; /* Fondo azul */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Esquinas redondeadas */
+    padding: 12px 25px; /* Espaciado interno */
+    margin-top: 15px; /* Espacio superior */
+    cursor: pointer; /* Cambiar cursor al pasar el mouse */
+    transition: background 0.3s ease; /* Transición para el efecto hover */
+    margin: 20px;
+}
+.aceptar:hover, .cancelar:hover {
+    
+    background-color: #e41e1e;
+    
+     /* Fondo más oscuro al pasar el mouse */
+}

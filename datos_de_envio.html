@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos de Envio</title>
+    <link rel="stylesheet" href="datos_de_envio.css">
+    <script defer src="datos_de_envio.js"></script>
+  
+</head>
+<body>
+
+    <header>
+        <div>
+            <a href="index.html"><img class="logo"  src="images/LOGO CTR.png" alt="GTR Construcciones"></a>       
+            </div>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar">
+                <button><img class="buscar" src="images/buscarlogo.png" alt="Buscar"></button>
+            </div>
+        
+            <div class="user-menu">
+                <div class="dropdown">
+                    <img src="images/Menu icon.png" alt="Menú" class="dropbtn">
+                    <div class="dropdown-content">
+                        <a href="../servicios/servicios.html">Servicios </a>
+                        <a href="../productos/productos.html">Productos </a>        
+                        <a href="../datos_de_envio/datos_de_envio.html">Paga ahora </a>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="user-menu">
+                <div class="dropdown">
+                    <a href="../carrito_compras/carrito_compras.html"><img src="images/Carrito de compras.png" alt="Carrito"></a>
+                    <div class="dropdown-content">
+                    
+                </div> 
+                </div>
+            </div> 
+
+
+
+            <div class="user-menu">
+                <div class="dropdown">
+                    <img  src="images/usuario.png" alt="Usuario">
+                    <div class="dropdown-content">
+                        <a href="../login/login.html">Iniciar Sesion</a>          
+                        <a href="../login/login.html">Registrarse</a>
+
+
+                    </div>
+                </div>
+            </div>
+    </header>
+
+
+<br>
+<br>
+<br>
+<section class="datos-envio">
+    <h1>Datos De Envío</h1>
+    <form id="shippingForm">
+        <!-- Nombre Completo -->
+        <label for="name">Nombre Completo:</label>
+        <input type="text" id="name" name="name" placeholder="Nombre completo" required>
+        
+        <!-- Método de Pago -->
+        <div class="Pago">
+            <label for="metodoPago">Método De Pago</label>
+            <select id="metodoPago" name="metodoPago" required>
+                <option value="">Seleccione un método</option>
+                <option value="Nequi">Nequi</option>
+                <option value="contra entrega">Contra Entrega</option>
+            </select>
+        </div>
+
+        <!-- Número Telefónico -->
+        <div class="abajo">
+            <label for="telefono">Número Telefónico:</label>
+            <input class="telefonos"  type="tel" id="telefono" name="telefono" placeholder="Número telefónico" required>
+
+
+
+
+
+           <!-- Departamento -->
+            <div class="departamento">
+           <label for="departamento-input">Departamento:</label>
+           <select id="departamento-input" required>
+               <option value="" disabled selected>-- Selecciona un departamento --</option>
+               <option value="Bogotá D.C.">Bogotá D.C.</option>
+               <option value="Antioquia">Antioquia</option>
+               <option value="Valle del Cauca">Valle del Cauca</option>
+               <option value="Atlántico">Atlántico</option>
+               <option value="Santander">Santander</option>
+           </select>
+        </div>
+        <div class="municipio">
+           <label for="ciudad-input">municipio:</label>
+           <select id="ciudad-input" required disabled>
+               <option value="" disabled selected>-- Selecciona un municipio --</option>
+           </select>
+        </div>
+        </div>
+            <!-- Dirección -->
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" placeholder="Dirección" required>
+        </div>
+        <br>
+
+
+
+
+
+
+
+
+
+
+
+        <br>
+        
+        <!-- Botones de acción -->
+        <div class="botones">
+            <button class="aceptar" type="submit" formaction="../confirmacion_compra/confirmacion_compra.html">Aceptar</button>
+            <button class="cancelar" type="reset">Cancelar</button>
+        </div>
+    </form>
+</section>
+
+</body>
+</html>
